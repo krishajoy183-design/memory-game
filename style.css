@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.2rem;
+  margin: 16px 0;
+}
+
+#message {
+  min-height: 24px;
+  font-weight: bold;
+}
+
+/* Game board: 4 cups per row */
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cup {
+  width: 80px;
+  height: 80px;
+  font-size: 2.2rem;
+  border: 2px solid #1f3a5f;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cup:hover {
+  background: #e8eef7;
+}
+
+/* Cup that is open or matched */
+.cup.open {
+  background: #dff0d8;
+  cursor: default;
+}
+
+#restart {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #1f3a5f;
+  color: #fff;
+  cursor: pointer;
+}
